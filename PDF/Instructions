@@ -1,0 +1,8 @@
+1.  Run getter.py with a list of section numbers in sectionnums file
+2.  Run pdf-rcw.sh in a directory full of PDFs, it will convert each into one line and then append each line into a new file RCW.txt
+3.  Clean up errant lines that do not conform to Chapter <numbers>
+4.  Run pdf-rcw-aftercleanup.sh to sort chapters by version number.
+5.  Run txt2jsonl.py to create jsonl file (RCW-Final.jsonl)from sorted text file
+6.  Run dprtoken.py to add tokens.  Creates output.jsonl.
+6   Run dprembed.py to add embeddings.  Creates output-embed.jsonl
+
